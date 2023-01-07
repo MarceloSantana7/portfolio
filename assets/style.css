@@ -109,10 +109,38 @@ header {
   overflow: hidden;
 }
 
+.projects__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.projects__buttons {
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 0px;
+}
+
+.projects__buttons button {
+  height: 100%;
+  width: 50px;
+  background-color: #4834D4;
+  border: 0px;
+  color: white;
+  border-radius: 3px;
+}
+
+.projects__buttons button:hover {
+  cursor: pointer;
+}
+
+
 .projects__menu {
   background-color: white;
   height: 240px;
   display: flex;
+  transition: all 0.3s linear;
   /* width: 100%; */
 }
 
