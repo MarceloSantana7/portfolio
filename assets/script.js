@@ -17,11 +17,8 @@ function handler() {
 
     let style = document.querySelector(".projects__menu").getAttribute('style');
 
+
     if (style == null) {
-
-
-
-
       document.querySelector(".projects__menu").setAttribute('style', `transform: translate3d(-${274 - first}px, 0px, 0px)`);
     } else {
       const translate3d = style.match(/translate3d\(([^)]+)\)/)[1];
@@ -55,7 +52,7 @@ function handler() {
       console.log("AAA " + abs);
       // console.log(abs);
       if (abs < 275) {
-        document.querySelector(".projects__menu").setAttribute('style', `transform: translate3d(${0}px, 0px, 0px)`);
+        document.querySelector(".projects__menu").removeAttribute('style');
       } else {
         document.querySelector(".projects__menu").setAttribute('style', `transform: translate3d(${a + 275}px, 0px, 0px)`);
       }

@@ -135,9 +135,78 @@ header {
   cursor: pointer;
 }
 
+.contact {
+  display: flex;
+  height: 250px;
+  padding-top: 20px;
+  background-color: #4834D4;
+}
+
+.contactBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact__info {
+  padding: 5px 0px;
+  width: 400px;
+}
+
+.contact__info h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.contact__info p {
+  color: white;
+  font-size: 16px;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+
+}
+
+.contact__form input{
+  all: unset;
+  height: 40px;  
+  background-color: white;
+  border-radius: 4px;
+  margin-bottom: 18px;
+  padding: 4px 10px;
+  box-shadow: 1px 1px 5px rgb(0 0 0 / 35%);
+}
+
+#inputMessage {
+  height: 80px;
+}
+
+.contact__form button{
+  all: unset;
+  height: 40px;  
+  background-color:#251978;
+  color: white;
+  border-radius: 4px;
+  padding: 4px 10px;
+  text-align: center;
+}
+
+.contact__form button:hover{
+  cursor: pointer;
+}
+
+footer {
+  background-color: #2B2B2B;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
 
 .projects__menu {
-  background-color: white;
   height: 240px;
   display: flex;
   transition: all 0.3s linear;
